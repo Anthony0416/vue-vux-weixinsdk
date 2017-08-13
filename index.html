@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" name="viewport">
+    <title>皮肤专家在线咨询</title>
+    <link rel="shortcut icon" href="static/img/icon.ico"/>
+    <script type="text/javascript" src="static/js/rem.js"></script>
+    <style type="text/css">
+			body {
+				margin: 0;
+				padding: 0
+			}
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <!--<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>-->
+    <script type="text/javascript">
+      localStorage.w_appId = '{$signPackage["appId"]}';
+      localStorage.w_timestamp = '{$signPackage["timestamp"]}';
+      localStorage.w_nonceStr = '{$signPackage["nonceStr"]}';
+      localStorage.w_signature = '{$signPackage["signature"]}';
+      localStorage.yimei_openid = '{$Think.session.yimei_openid}';
+      localStorage.yimei_nickname = '{$Think.session.yimei_nickname}';
+      localStorage.yimei_id = '{$Think.session.yimei_id}';
+      localStorage.yimei_headimgurl = '{$Think.session.yimei_headimgurl}';
+
+//      wx.config({
+//        debug:true,
+//        appId: '{$signPackage["appId"]}',
+//        timestamp: '{$signPackage["timestamp"]}',
+//        nonceStr:'{$signPackage["nonceStr"]}',
+//        signature: '{$signPackage["signature"]}',
+//        jsApiList: [
+//          'chooseImages',
+//          'onMenuShareTimeline',
+//          'onMenuShareAppMessage',
+//          'onMenuShareQQ',
+//          'onMenuShareWeibo',
+//          'hideMenuItems',
+//        ]
+//      });
+//
+//      wx.ready(function(){
+//        wx.hideMenuItems({
+//          menuList: ['menuItem:favorite','menuItem:editTag','menuItem:delete','menuItem:copyUrl','menuItem:originPage','menuItem:readMode','menuItem:openWithQQBrowser','menuItem:openWithSafari','menuItem:share:email'] // 要隐藏的菜单项，只能隐藏“传播类”和“保护类”按钮，所有menu项见附录3
+//        });
+//        wx.hideMenuItems({
+//          menuList: ['menuItem:favorite','menuItem:editTag','menuItem:delete','menuItem:copyUrl','menuItem:originPage','menuItem:readMode','menuItem:openWithQQBrowser','menuItem:openWithSafari','menuItem:share:email'] // 要隐藏的菜单项，只能隐藏“传播类”和“保护类”按钮，所有menu项见附录3
+//        });
+//      });
+    </script>
+  </body>
+</html>
